@@ -1,0 +1,31 @@
+= Additional Installation Notes =
+
+One can manually install mcxlabcl by simply unzip the mcxlabcl zip file and use command
+`addpath('/path/to/mcxlabcl/')` to install it for Octave/MATLAB.
+
+Alternatively, for Windows, if you run the Windows all-in-one installer, the mcxlabcl
+toolbox, along with other toolboxes are automatically added to your MATLAB path,
+and can be used immediately.
+
+If you use Linux, you can also install these packages via the official software
+repositories
+
+=== For Ubuntu/Debian users ===
+
+Please add the fangq/ppa repository (https://launchpad.net/~fangq/+archive/ubuntu/ppa) 
+to your system via
+
+  sudo add-apt-repository ppa:fangq/ppa
+  sudo apt-get update
+  sudo apt-get install octave-mcxlabcl matlab-mcxlabcl
+
+When opening Octave, one must run
+  pkg load mcxlabcl
+
+to load mcxlabcl toolbox if installed via the official octave-mcxlabcl package.
+
+=== For Fedora users ===
+
+The official octave-mcxlabcl package supported on Fedora since F24 can be installed by
+
+  sudo dnf install octave-mcxlab
